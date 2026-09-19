@@ -1,5 +1,6 @@
 - The scripts are arranged in a sequential order to make it easier to understand and run the code
 - A small description of each script and what it does is given at the end of this document
+- embedding_cache.db is a large file so its not uploaded on github, however it can be provided upon request
 - Retrieval scripts folder contains all the scripts which were used for extracting legal rules by calling different LLMs
 - Retrieval results folder contains the results of the evaluations
 - Different threshold extractions are kept in separate .tsv files
@@ -51,4 +52,4 @@ DATA_FILES:
 
 qa.csv (source file)
 biased_final2.csv (converted qa.csv into this biased file)
-embedding_cache.db (Contains all the embeddings for evaluation)
+embedding_cache.db (Contains all the embeddings for evaluation, available upon request)
