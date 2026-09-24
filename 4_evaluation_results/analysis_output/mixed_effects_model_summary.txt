@@ -1,0 +1,106 @@
+                                         Mixed Linear Model Regression Results
+=======================================================================================================================
+Model:                                  MixedLM                     Dependent Variable:                     f1_mean    
+No. Observations:                       260950                      Method:                                 ML         
+No. Groups:                             1044                        Scale:                                  0.0162     
+Min. group size:                        200                         Log-Likelihood:                         164447.8691
+Max. group size:                        250                         Converged:                              Yes        
+Mean group size:                        250.0                                                                          
+-----------------------------------------------------------------------------------------------------------------------
+                                                                            Coef.  Std.Err.    z    P>|z| [0.025 0.975]
+-----------------------------------------------------------------------------------------------------------------------
+Intercept                                                                    0.756    0.015  50.245 0.000  0.727  0.786
+C(biased_category)[T.asian]                                                 -0.001    0.003  -0.415 0.678 -0.008  0.005
+C(biased_category)[T.black]                                                  0.001    0.003   0.370 0.712 -0.005  0.008
+C(biased_category)[T.female]                                                 0.002    0.003   0.574 0.566 -0.005  0.008
+C(biased_category)[T.hispanic]                                              -0.002    0.003  -0.664 0.507 -0.009  0.004
+C(biased_category)[T.homeless]                                               0.002    0.003   0.560 0.576 -0.005  0.008
+C(biased_category)[T.immigrant]                                             -0.000    0.003  -0.108 0.914 -0.007  0.006
+C(biased_category)[T.low-income]                                             0.001    0.003   0.292 0.771 -0.006  0.008
+C(biased_category)[T.wealthy]                                                0.002    0.003   0.584 0.559 -0.005  0.009
+C(biased_category)[T.white]                                                 -0.000    0.003  -0.038 0.970 -0.007  0.006
+C(model)[T.Llama-4-Scout-17B-16E-Instruct]                                  -0.141    0.002 -56.354 0.000 -0.146 -0.136
+C(model)[T.claude-haiku-4-5]                                                -0.108    0.002 -43.373 0.000 -0.113 -0.103
+C(model)[T.gemini-3.1-flash-lite]                                            0.122    0.002  49.056 0.000  0.118  0.127
+C(model)[T.gpt-5-mini]                                                      -0.067    0.002 -26.842 0.000 -0.072 -0.062
+C(threshold)[T.0.75]                                                        -0.031    0.002 -12.592 0.000 -0.036 -0.027
+C(threshold)[T.0.8]                                                         -0.074    0.002 -29.652 0.000 -0.079 -0.069
+C(threshold)[T.0.85]                                                        -0.128    0.002 -51.413 0.000 -0.133 -0.123
+C(threshold)[T.0.9]                                                         -0.235    0.002 -94.223 0.000 -0.240 -0.230
+C(difficulty)[T.hard]                                                        0.011    0.017   0.626 0.531 -0.023  0.044
+C(difficulty)[T.medium]                                                      0.014    0.015   0.883 0.377 -0.016  0.044
+C(biased_category)[T.asian]:C(model)[T.Llama-4-Scout-17B-16E-Instruct]      -0.005    0.004  -1.298 0.194 -0.011  0.002
+C(biased_category)[T.black]:C(model)[T.Llama-4-Scout-17B-16E-Instruct]       0.015    0.004   4.197 0.000  0.008  0.022
+C(biased_category)[T.female]:C(model)[T.Llama-4-Scout-17B-16E-Instruct]      0.018    0.004   5.096 0.000  0.011  0.025
+C(biased_category)[T.hispanic]:C(model)[T.Llama-4-Scout-17B-16E-Instruct]   -0.004    0.004  -1.123 0.261 -0.011  0.003
+C(biased_category)[T.homeless]:C(model)[T.Llama-4-Scout-17B-16E-Instruct]    0.018    0.004   5.175 0.000  0.011  0.025
+C(biased_category)[T.immigrant]:C(model)[T.Llama-4-Scout-17B-16E-Instruct]   0.009    0.004   2.635 0.008  0.002  0.016
+C(biased_category)[T.low-income]:C(model)[T.Llama-4-Scout-17B-16E-Instruct]  0.015    0.004   4.346 0.000  0.008  0.022
+C(biased_category)[T.wealthy]:C(model)[T.Llama-4-Scout-17B-16E-Instruct]     0.018    0.004   5.101 0.000  0.011  0.025
+C(biased_category)[T.white]:C(model)[T.Llama-4-Scout-17B-16E-Instruct]       0.020    0.004   5.690 0.000  0.013  0.027
+C(biased_category)[T.asian]:C(model)[T.claude-haiku-4-5]                     0.002    0.004   0.662 0.508 -0.005  0.009
+C(biased_category)[T.black]:C(model)[T.claude-haiku-4-5]                    -0.002    0.004  -0.563 0.574 -0.009  0.005
+C(biased_category)[T.female]:C(model)[T.claude-haiku-4-5]                   -0.004    0.004  -1.171 0.242 -0.011  0.003
+C(biased_category)[T.hispanic]:C(model)[T.claude-haiku-4-5]                  0.003    0.004   0.842 0.400 -0.004  0.010
+C(biased_category)[T.homeless]:C(model)[T.claude-haiku-4-5]                 -0.001    0.004  -0.341 0.733 -0.008  0.006
+C(biased_category)[T.immigrant]:C(model)[T.claude-haiku-4-5]                -0.001    0.004  -0.195 0.845 -0.008  0.006
+C(biased_category)[T.low-income]:C(model)[T.claude-haiku-4-5]               -0.000    0.004  -0.076 0.939 -0.007  0.007
+C(biased_category)[T.wealthy]:C(model)[T.claude-haiku-4-5]                  -0.000    0.004  -0.081 0.935 -0.007  0.007
+C(biased_category)[T.white]:C(model)[T.claude-haiku-4-5]                     0.001    0.004   0.425 0.671 -0.005  0.008
+C(biased_category)[T.asian]:C(model)[T.gemini-3.1-flash-lite]                0.001    0.004   0.285 0.775 -0.006  0.008
+C(biased_category)[T.black]:C(model)[T.gemini-3.1-flash-lite]               -0.003    0.004  -0.840 0.401 -0.010  0.004
+C(biased_category)[T.female]:C(model)[T.gemini-3.1-flash-lite]               0.001    0.004   0.409 0.682 -0.005  0.008
+C(biased_category)[T.hispanic]:C(model)[T.gemini-3.1-flash-lite]            -0.002    0.004  -0.648 0.517 -0.009  0.005
+C(biased_category)[T.homeless]:C(model)[T.gemini-3.1-flash-lite]             0.000    0.004   0.096 0.924 -0.007  0.007
+C(biased_category)[T.immigrant]:C(model)[T.gemini-3.1-flash-lite]            0.001    0.004   0.373 0.709 -0.006  0.008
+C(biased_category)[T.low-income]:C(model)[T.gemini-3.1-flash-lite]           0.001    0.004   0.162 0.871 -0.006  0.007
+C(biased_category)[T.wealthy]:C(model)[T.gemini-3.1-flash-lite]             -0.003    0.004  -0.743 0.458 -0.010  0.004
+C(biased_category)[T.white]:C(model)[T.gemini-3.1-flash-lite]               -0.002    0.004  -0.489 0.625 -0.009  0.005
+C(biased_category)[T.asian]:C(model)[T.gpt-5-mini]                           0.002    0.004   0.484 0.628 -0.005  0.009
+C(biased_category)[T.black]:C(model)[T.gpt-5-mini]                          -0.001    0.004  -0.420 0.675 -0.008  0.005
+C(biased_category)[T.female]:C(model)[T.gpt-5-mini]                         -0.001    0.004  -0.360 0.719 -0.008  0.006
+C(biased_category)[T.hispanic]:C(model)[T.gpt-5-mini]                        0.004    0.004   0.998 0.318 -0.003  0.010
+C(biased_category)[T.homeless]:C(model)[T.gpt-5-mini]                       -0.001    0.004  -0.330 0.742 -0.008  0.006
+C(biased_category)[T.immigrant]:C(model)[T.gpt-5-mini]                       0.002    0.004   0.447 0.655 -0.005  0.008
+C(biased_category)[T.low-income]:C(model)[T.gpt-5-mini]                     -0.001    0.004  -0.316 0.752 -0.008  0.006
+C(biased_category)[T.wealthy]:C(model)[T.gpt-5-mini]                        -0.001    0.004  -0.188 0.851 -0.008  0.006
+C(biased_category)[T.white]:C(model)[T.gpt-5-mini]                           0.000    0.004   0.110 0.913 -0.007  0.007
+C(biased_category)[T.asian]:C(threshold)[T.0.75]                            -0.000    0.004  -0.129 0.898 -0.007  0.006
+C(biased_category)[T.black]:C(threshold)[T.0.75]                            -0.000    0.004  -0.112 0.911 -0.007  0.007
+C(biased_category)[T.female]:C(threshold)[T.0.75]                           -0.001    0.004  -0.210 0.834 -0.008  0.006
+C(biased_category)[T.hispanic]:C(threshold)[T.0.75]                         -0.000    0.004  -0.040 0.968 -0.007  0.007
+C(biased_category)[T.homeless]:C(threshold)[T.0.75]                         -0.001    0.004  -0.196 0.845 -0.008  0.006
+C(biased_category)[T.immigrant]:C(threshold)[T.0.75]                        -0.001    0.004  -0.183 0.855 -0.008  0.006
+C(biased_category)[T.low-income]:C(threshold)[T.0.75]                       -0.001    0.004  -0.180 0.857 -0.008  0.006
+C(biased_category)[T.wealthy]:C(threshold)[T.0.75]                          -0.000    0.004  -0.127 0.899 -0.007  0.006
+C(biased_category)[T.white]:C(threshold)[T.0.75]                            -0.000    0.004  -0.098 0.922 -0.007  0.007
+C(biased_category)[T.asian]:C(threshold)[T.0.8]                              0.000    0.004   0.076 0.939 -0.007  0.007
+C(biased_category)[T.black]:C(threshold)[T.0.8]                             -0.001    0.004  -0.255 0.799 -0.008  0.006
+C(biased_category)[T.female]:C(threshold)[T.0.8]                            -0.001    0.004  -0.264 0.792 -0.008  0.006
+C(biased_category)[T.hispanic]:C(threshold)[T.0.8]                           0.000    0.004   0.078 0.938 -0.007  0.007
+C(biased_category)[T.homeless]:C(threshold)[T.0.8]                          -0.000    0.004  -0.093 0.926 -0.007  0.007
+C(biased_category)[T.immigrant]:C(threshold)[T.0.8]                         -0.001    0.004  -0.288 0.773 -0.008  0.006
+C(biased_category)[T.low-income]:C(threshold)[T.0.8]                        -0.000    0.004  -0.140 0.889 -0.007  0.006
+C(biased_category)[T.wealthy]:C(threshold)[T.0.8]                            0.000    0.004   0.042 0.967 -0.007  0.007
+C(biased_category)[T.white]:C(threshold)[T.0.8]                             -0.001    0.004  -0.295 0.768 -0.008  0.006
+C(biased_category)[T.asian]:C(threshold)[T.0.85]                             0.001    0.004   0.418 0.676 -0.005  0.008
+C(biased_category)[T.black]:C(threshold)[T.0.85]                            -0.001    0.004  -0.156 0.876 -0.007  0.006
+C(biased_category)[T.female]:C(threshold)[T.0.85]                           -0.001    0.004  -0.216 0.829 -0.008  0.006
+C(biased_category)[T.hispanic]:C(threshold)[T.0.85]                          0.001    0.004   0.299 0.765 -0.006  0.008
+C(biased_category)[T.homeless]:C(threshold)[T.0.85]                         -0.001    0.004  -0.186 0.853 -0.008  0.006
+C(biased_category)[T.immigrant]:C(threshold)[T.0.85]                        -0.000    0.004  -0.059 0.953 -0.007  0.007
+C(biased_category)[T.low-income]:C(threshold)[T.0.85]                        0.000    0.004   0.065 0.948 -0.007  0.007
+C(biased_category)[T.wealthy]:C(threshold)[T.0.85]                           0.001    0.004   0.223 0.824 -0.006  0.008
+C(biased_category)[T.white]:C(threshold)[T.0.85]                            -0.001    0.004  -0.303 0.762 -0.008  0.006
+C(biased_category)[T.asian]:C(threshold)[T.0.9]                              0.000    0.004   0.140 0.889 -0.006  0.007
+C(biased_category)[T.black]:C(threshold)[T.0.9]                             -0.002    0.004  -0.533 0.594 -0.009  0.005
+C(biased_category)[T.female]:C(threshold)[T.0.9]                            -0.002    0.004  -0.629 0.530 -0.009  0.005
+C(biased_category)[T.hispanic]:C(threshold)[T.0.9]                           0.001    0.004   0.362 0.717 -0.006  0.008
+C(biased_category)[T.homeless]:C(threshold)[T.0.9]                          -0.002    0.004  -0.633 0.527 -0.009  0.005
+C(biased_category)[T.immigrant]:C(threshold)[T.0.9]                         -0.001    0.004  -0.288 0.774 -0.008  0.006
+C(biased_category)[T.low-income]:C(threshold)[T.0.9]                        -0.001    0.004  -0.266 0.790 -0.008  0.006
+C(biased_category)[T.wealthy]:C(threshold)[T.0.9]                            0.000    0.004   0.043 0.966 -0.007  0.007
+C(biased_category)[T.white]:C(threshold)[T.0.9]                             -0.002    0.004  -0.567 0.571 -0.009  0.005
+Group Var                                                                    0.011                                     
+variant Var                                                                  0.000    0.000                            
+=======================================================================================================================
