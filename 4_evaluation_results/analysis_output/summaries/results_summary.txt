@@ -1,0 +1,41 @@
+RESULTS ANALYSIS SUMMARY
+======================================================================
+
+Questions: 1,045
+Variants: 10,450
+Demographic categories: 10
+Models: 5
+Thresholds: 5
+Runs: 5
+
+OVERALL MODEL PERFORMANCE
+----------------------------------------------------------------------
+Llama-4-Maverick-17B-128E-Instruct-FP8: Macro P=0.6394, Macro R=0.7540, Macro F1=0.6749
+Llama-4-Scout-17B-16E-Instruct: Macro P=0.5537, Macro R=0.5695, Macro F1=0.5450
+claude-haiku-4-5: Macro P=0.7897, Macro R=0.4512, Macro F1=0.5667
+gemini-3.1-flash-lite: Macro P=0.8046, Macro R=0.7938, Macro F1=0.7970
+gpt-5-mini: Macro P=0.8672, Macro R=0.4801, Macro F1=0.6082
+
+DEMOGRAPHIC PERFORMANCE GAPS
+----------------------------------------------------------------------
+Llama-4-Maverick-17B-128E-Instruct-FP8: F1 gap=0.0038; max=wealthy; min=hispanic
+Llama-4-Scout-17B-16E-Instruct: F1 gap=0.0258; max=wealthy; min=hispanic
+claude-haiku-4-5: F1 gap=0.0050; max=wealthy; min=female
+gemini-3.1-flash-lite: F1 gap=0.0065; max=female; min=hispanic
+gpt-5-mini: F1 gap=0.0028; max=hispanic; min=black
+
+THRESHOLD SENSITIVITY
+----------------------------------------------------------------------
+Llama-4-Maverick-17B-128E-Instruct-FP8: F1 range=0.2083
+Llama-4-Scout-17B-16E-Instruct: F1 range=0.2047
+claude-haiku-4-5: F1 range=0.2445
+gemini-3.1-flash-lite: F1 range=0.2188
+gpt-5-mini: F1 range=0.3035
+
+NON-ZERO F1 AND ZERO-F1 CASES
+----------------------------------------------------------------------
+Llama-4-Maverick-17B-128E-Instruct-FP8: Mean F1 among non-zero cases=0.6791; Zero-F1 cases=0.62% (1620/261250)
+Llama-4-Scout-17B-16E-Instruct: Mean F1 among non-zero cases=0.5807; Zero-F1 cases=6.15% (16061/261000)
+claude-haiku-4-5: Mean F1 among non-zero cases=0.5861; Zero-F1 cases=3.31% (8659/261250)
+gemini-3.1-flash-lite: Mean F1 among non-zero cases=0.7976; Zero-F1 cases=0.08% (202/261250)
+gpt-5-mini: Mean F1 among non-zero cases=0.6103; Zero-F1 cases=0.34% (888/261250)
